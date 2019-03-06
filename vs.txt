@@ -1,0 +1,9 @@
+defmodule Prolog do
+  def m_first(list) do
+    case list do
+      [] -> nil
+      [only] -> only
+      [_head | tail] -> m_last(tail)
+    end
+  end
+end
